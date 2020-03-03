@@ -143,6 +143,11 @@ namespace Maratony.UI.ViewModel
 
         public ICommand ClearCommand { get; private set; }
 
+        public void SaveBase()
+        {
+            model.ZapiszDoBazy();
+        }
+
 
 
 

@@ -12,6 +12,7 @@
             <RowDefinition Height="*" />
 
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
 
         </Grid.RowDefinitions>
 
@@ -34,6 +35,17 @@
                     Grid.Column="1"
                     Content="Wyczyść" 
                     Command="{Binding ClearCommand}"/>
+        </Grid>
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+            </Grid.ColumnDefinitions>
+            <Button Margin="5"
+                    Grid.Column="0"
+                    Content="Zapisz do bazy danych" 
+                    Command="{Binding SaveBase}"
+                    />
         </Grid>
 
     </Grid>
