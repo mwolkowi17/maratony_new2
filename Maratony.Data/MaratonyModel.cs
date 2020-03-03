@@ -65,6 +65,7 @@ namespace Maratony.Data
 
                 this.listaBiegaczy.Add(b);
                 b.Bieg = zawody.ID; // tu było zawody (samo)
+                
                 zawody.Biegacze.Add(b);
                
 
@@ -77,20 +78,25 @@ namespace Maratony.Data
         {
             using (Model1 context=new Model1())
             {
-                 List<Biegacz> ZawartoscBazy=null;
+                List<Biegacz> ZawartoscBazy= new List<Biegacz>();
                 foreach(var n in context.Biegaczs)
                 {
                     ZawartoscBazy.Add(n);
                 }
+                context.Biegaczs.Add(listaBiegaczy.Last());
+                
+                context.SaveChanges();
 
-                foreach(var m in listaBiegaczy)
+
+
+                /*foreach(var m in listaBiegaczy)
                 {
-                    //if (!ZawartoscBazy.Contains(m))
-                   // {
+                    if (ZawartoscBazy.Contains(m))
+                    {
                         context.Biegaczs.Add(m);
                         context.SaveChanges();
-                   // }
-                }
+                    }
+                }*/
                 
 
             }

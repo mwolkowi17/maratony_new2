@@ -35,6 +35,9 @@ namespace Maratony.UI.ViewModel
             this.ClearCommand = new RelayCommand(
                 action => this.WyczyscWybraneZawody(),
                 enable => this.CzyMoznaDodacBiegacza());
+            this.SaveBase = new RelayCommand(
+                action => this.AktualizujBaze(),
+                enable => this.CzyMoznaDodacBiegacza());
         }
 
         private void OdswiezZawody()
@@ -126,6 +129,7 @@ namespace Maratony.UI.ViewModel
             {
                 model.DodajBiegacza(this.WybraneZawody.ID, "Nowy", "Biegacz");
                 this.OdswiezBiegaczy();
+                
             }
         }
 
@@ -143,8 +147,10 @@ namespace Maratony.UI.ViewModel
 
         public ICommand ClearCommand { get; private set; }
 
-        public void SaveBase()
-        {
+        public ICommand SaveBase { get; set; }
+        
+        public void AktualizujBaze()
+            {
             model.ZapiszDoBazy();
         }
 
