@@ -7,13 +7,13 @@ namespace Maratony.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class Third : IMigrationMetadata
+    public sealed partial class C : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Third));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(C));
         
         string IMigrationMetadata.Id
         {
-            get { return "202003030810488_Third"; }
+            get { return "202003100903309_C"; }
         }
         
         string IMigrationMetadata.Source

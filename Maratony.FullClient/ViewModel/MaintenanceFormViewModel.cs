@@ -48,9 +48,9 @@ namespace Maratony.UI.ViewModel
         internal void PrzykladoweDane()
         {
            // model.DodajZawody("Kraków", new DateTime(2016, 1, 10), 11.6);
-           // model.DodajZawody("Warszawa", new DateTime(2016, 1, 23), 6);
-           // model.DodajBiegacza(model.ListaZawodow[0].ID, "Młody", "Bóg");
-           // model.DodajBiegacza(model.ListaZawodow[1].ID, "Jan", "Kowalski");
+            //model.DodajZawody("Warszawa", new DateTime(2016, 1, 23), 6);
+           // model.DodajBiegacza(model.ListaZawodow[0].ZawodyID, "Młody", "Bóg");
+           // model.DodajBiegacza(model.ListaZawodow[1].ZawodyID, "Jan", "Kowalski");
            // model.DodajBiegacza(model.ListaZawodow[1].ID, "Adam", "Nowak");
         }
 
@@ -127,7 +127,7 @@ namespace Maratony.UI.ViewModel
         {
             if (WybraneZawody != null)
             {
-                model.DodajBiegacza(this.WybraneZawody.ID, "Nowy", "Biegacz");
+                model.DodajBiegacza(this.WybraneZawody.ZawodyID, "Nowy", "Biegacz");
                 this.OdswiezBiegaczy();
                 
             }

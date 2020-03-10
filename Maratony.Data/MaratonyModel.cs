@@ -55,7 +55,7 @@ namespace Maratony.Data
         {
 
             using (Model1 context = new Model1()) { 
-                Zawody zawody = listaZawodow.Where(z => (z.ID == zawodyId)).FirstOrDefault();
+                Zawody zawody = listaZawodow.Where(z => (z.ZawodyID == zawodyId)).FirstOrDefault();
 
                 /*Zawody zawody = (from Zawody item in listaZawodow
                                  where item.ID == zawodyId
@@ -64,7 +64,9 @@ namespace Maratony.Data
                 Biegacz b = new Biegacz() { Imie = imie, Nazwisko = nazwisko };
 
                 this.listaBiegaczy.Add(b);
-                b.Bieg = zawody.ID; // tu było zawody (samo)
+                //b.Bieg = zawody; // tu było zawody (samo)
+                b.ZawodyID = zawody.ZawodyID;
+                
                 
                 zawody.Biegacze.Add(b);
                

@@ -6,9 +6,6 @@
       <HashCode>AAAAAAQAAAAAgAAAABAAQAACAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Zawody.cs</FileName>
     </TypeIdentifier>
-    <ShowAsCollectionAssociation>
-      <Property Name="Biegacze" />
-    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Maratony.Data.Biegacz">
     <Position X="6" Y="1.5" Width="1.5" />
@@ -16,9 +13,6 @@
       <HashCode>AIAAEAAAAIAAgAAAABAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
       <FileName>Biegacz.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Bieg" />
-    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -12,7 +12,7 @@ namespace Maratony.Data
         public Zawody()
         {
 
-            this.ID = System.Threading.Interlocked.Increment(ref nextId);
+            this.ZawodyID = System.Threading.Interlocked.Increment(ref nextId); //było samo ID
             Biegacze = new List<Biegacz>(); 
         }
 
@@ -38,18 +38,17 @@ namespace Maratony.Data
             
         }
 
-        public long ID
+        public long ZawodyID //było samo ID
         {
             get;
             set;
             
         }
-
         public List<Biegacz> Biegacze
         {
             get;
             set;
-            
+
         }
     }
 }

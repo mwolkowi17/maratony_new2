@@ -52,9 +52,9 @@
   <ItemGroup>
     <Compile Include="Biegacz.cs" />
     <Compile Include="MaratonyModel.cs" />
-    <Compile Include="Migrations\202003030810488_Fourth.cs" />
-    <Compile Include="Migrations\202003030810488_Fourth.Designer.cs">
-      <DependentUpon>202003030810488_Fourth.cs</DependentUpon>
+    <Compile Include="Migrations\202003100903309_C.cs" />
+    <Compile Include="Migrations\202003100903309_C.Designer.cs">
+      <DependentUpon>202003100903309_C.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model1.cs" />
@@ -67,8 +67,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202003030810488_Fourth.resx">
-      <DependentUpon>202003030810488_Fourth.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202003100903309_C.resx">
+      <DependentUpon>202003100903309_C.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

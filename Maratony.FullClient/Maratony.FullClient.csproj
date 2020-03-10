@@ -65,6 +65,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Biegaczs.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model1.cs" />
     <Compile Include="RelayCommand.cs" />
     <Compile Include="ViewModel\MaintenanceFormViewModel.cs" />

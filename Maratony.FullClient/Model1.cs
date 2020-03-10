@@ -20,7 +20,7 @@ namespace Maratony.UI
             modelBuilder.Entity<Zawodies>()
                 .HasMany(e => e.Biegaczs)
                 .WithOptional(e => e.Zawodies)
-                .HasForeignKey(e => e.Zawody_ID);
+                .HasForeignKey(e => e.Bieg);
         }
     }
 }
